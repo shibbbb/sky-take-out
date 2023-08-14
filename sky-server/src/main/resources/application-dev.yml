@@ -12,3 +12,8 @@ sky:
     access-key-id: LTAI5t7TGQpk29B1tWUKeTke
     access-key-secret: TJrF7q5gaVXsOQhaioQY7YXUxvv2eZ
     bucket-name: shibbb
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 1

@@ -4,11 +4,10 @@
 <mapper namespace="com.sky.mapper.DisFlavorMapper">
 
 
-    <insert id="insertBatch"  >
-        insert into dish_flavor( dish_id, name, value)
-        values
-      <foreach collection="flavors" item="df" separator=",">
-          (#{df.dishid},#{df.name},#{df.value},)
-      </foreach>
-    </insert>
+    <insert id="insertBatch">
+    insert into dish_flavor(dish_id, name, value) values
+        <foreach collection="flavors" item="dishFlavor" separator=",">
+               (#{dishFlavor.dishId},#{dishFlavor.name},#{dishFlavor.value})
+                   </foreach></insert>
+
 </mapper>
